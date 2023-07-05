@@ -15,11 +15,11 @@ class User:
     status: UserStatus
     items: list[str]
 
-    # def __init__(self, name, age, status, items):
-    #     self.name = name
-    #     self.age = age
-    #     self.status = status
-    #     self.items = items
+    def __init__(self, name, age, status, items):
+        self.name = name
+        self.age = age
+        self.status = status
+        self.items = items
 
     @classmethod
     def from_csv(cls, user_dict):
